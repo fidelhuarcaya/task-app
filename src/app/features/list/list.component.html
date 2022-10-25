@@ -1,0 +1,19 @@
+<mat-list class="container">
+  <div mat-subheader>Pending tasks</div>
+  <mat-selection-list #shoes [multiple]="false">
+    <mat-list-option *ngFor="let folder of folders">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line>{{folder.name}}</div>
+      <div mat-line> {{folder.updated | date}} </div>
+    </mat-list-option>
+  </mat-selection-list>
+  <mat-divider></mat-divider>
+  <div mat-subheader>Completed tasks</div>
+  <mat-selection-list  [multiple]="false">
+    <mat-list-option *ngFor="let note of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <div mat-line>{{note.name}}</div>
+      <div mat-line> {{note.updated | date}} </div>
+    </mat-list-option>
+  </mat-selection-list>
+</mat-list>

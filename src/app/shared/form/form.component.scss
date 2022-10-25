@@ -1,0 +1,36 @@
+.form-task {
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.field-full-width {
+  width: 100%;
+}
+
+.stepper {
+  min-width: 150px;
+  max-width: 1800px;
+  height: 100%;
+  width: 100%;
+}
+
+.close.mat-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  line-height: 18px;
+  min-width: auto;
+}
+.title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.field-date{
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+}
